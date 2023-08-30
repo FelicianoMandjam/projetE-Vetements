@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compte</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" alt="logo" width="125" />
+        </div>
+
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html"> Acuueil</a></li>
+            <li> <a href="produit.html"> Produits</a></li>
+            <li><a href="contact.html"> Contact</a></li>
+            <li><a href="account.html"> Compte</a></li>
+          </ul>
+          <img src="images/cart.png" width="30" height="30" alt="panier" />
+          <img
+            src="images/menu.png"
+            alt="menu"
+            class="menu-icon"
+            onclick="menutoggle()"
+          />
+        </nav>
+      </div>
+    </div>
+
+    <!-- ---- Page de compte---- -->
+    <section class="account-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="images/image1.jpg" width="100%" />
+          </div>
+
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Connecter</span>
+                <span onclick="register()">Inscrire</span>
+                <hr id="indicator" />
+              </div>
+
+              <form id="LoginForm">
+                <input type="text" placeholder="nom utilisateur" />
+                <input type="password" placeholder="mot de passe" />
+                <button type="submit" class="btn">Connecter</button>
+                <a href="#">mot de passe oublié</a>
+              </form>
+
+              <form id="RegForm">
+                <input type="text" placeholder="nom utilisateur" />
+                <input type="text" placeholder="Email" />
+                <input type="password" placeholder="mot de passe" />
+                <button type="submit" class="btn">Inscription</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------- footer ---------->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Téléchargez l'application</h3>
+            <p>Téléchargement pour téléphone Android et ios</p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="play store" />
+              <img src="images/app-store.png" alt=" app store" />
+            </div>
+          </div>
+
+          <div class="footer-col-2">
+            <img src="images/logo.png" alt="mon logo" />
+            <p>
+              Notre objectif est de rendre le plaisir et le bien-etre de
+              s'habiller accessibles au plus grand nombre
+            </p>
+          </div>
+
+          <div class="footer-col-3">
+            <h3>Liens utiles</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Postes</li>
+              <li>Politique de retour</li>
+              <li>Rejoindre un partenaire</li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Nous suivre</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>Youtube</li>
+            </ul>
+          </div>
+        </div>
+
+        <hr />
+
+        <p class="copyright">Copyright 2023 - E Commerce</p>
+      </div>
+    </footer>
+
+    <!--------------------------  javascript pour le menu toggle ---------------------->
+    <script>
+      let MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+
+<!--------------------------------- javascript pour account --------------------------------->
+    <script>
+        let Indicator = document.getElementById("indicator");
+        let LoginForm = document.getElementById("LoginForm"); 
+        let RegForm = document.getElementById("RegForm");
+
+        function register(){
+            RegForm.style.display = "block";
+            LoginForm.style.display = "none"; 
+            indicator.style.transform = "translateX(100px)"
+        }
+
+        function login(){
+            RegForm.style.display = "none";
+            LoginForm.style.display = "block"; 
+            indicator.style.transform = "translateX(0px)"
+        }
+    </script>
+
+  </body>
+</html>

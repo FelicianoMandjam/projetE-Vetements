@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                  <a href="index.html">
+                    <img src="images/logo.png" alt="logo" width="125">  
+                  </a>
+      
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html"> Acuueil</a></li>
+                        <li> <a href="produit.html"> Produits</a></li>
+                        <li><a href="contact.html"> Contact</a></li>
+                        <li><a href="account.html"> Compte</a></li>
+                    </ul>
+                   <img src="images/cart.png" width="30" height="30" alt="panier">
+                   <img src="images/menu.png" onclick="menutoggle()" class="menu-icon" alt="panier">
+                </nav>
+            </div>
+            <div class="row">
+             <div class="col-2">
+                <h1>
+                    Donnez a votre travail <br> Un nouveau style!
+                </h1>
+                <p>la réussite n'st pas toujours synonyme de grandeur,c'est une question de constance.<br>
+                    Le travail  Acharné et constant permet d'obtenir le succés .
+                    La grandeur viendra 
+                </p>
+                <a href="produit.html"class="btn">Explorez juste &rarr;</a>
+    
+             </div>
+                <div class="col-2">
+                    <img src="images/image1.jpg" alt="homme a l'ecran"> 
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- les differentes  categories  -->
+    <section class="categories">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <img src="images/category-1.jpg" alt=" chaussure rouge ">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-2.jpg" alt="chaussure blanche ">
+                </div>
+                <div class="col-3">
+                    <img src="images/category-3.jpg" alt="femme ">
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+    <!-- les produits  -->
+    <section class="small-container">
+        <h2 class="title">Les principaux produits </h2>
+        <div class="row">
+            <div class="col-4">
+             <a href="/details-produit.html"><img src="images/product-1.jpg" alt="" href="/details-produit.html"> 
+             <h4>Mens standard Fit crew t-shirt</h4>
+             <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o" ></i>
+             </div>
+             <p>50$</p>
+            </div> 
+            <div class="col-4">
+                <a href="/details-produit.html"><img src="images/product-2.jpg" alt="" href="/details-produit.html"></a>
+                <h4>Mens standard Fit crew t-shirt</h4>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-o" ></i>
+                </div>
+                <p>50$</p>
+               </div> 
+               <div class="col-4">
+                <a href="/details-produit.html"> <img src="images/product-3.jpg" alt="" href="/details-produit.html"></a>
+                <h4>Mens standard Fit crew t-shirt</h4>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-o" ></i>
+                </div>
+                <p>50$</p>
+               </div> 
+               <div class="col-4">
+                <a href="/details-produit.html"><img src="images/product-4.jpg" alt="" href="/details-produit.html"></a>
+                <h4>Mens standard Fit crew t-shirt</h4>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-o" ></i>
+                </div>
+                <p>50$</p>
+               </div> 
+               
+            
+             
+        </div>
+        <!-- les produits recents  -->
+        <h2 class="title">Les produits Récents </h2>
+        <div class="row">
+            <div class="col-4">
+             <img src="images/product-5.jpg" alt="" href="/details-produit.html">
+             <h4>Mens standard Fit crew t-shirt</h4>
+             <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o" ></i>
+             </div>
+             <p>50$</p>
+            </div> 
+            <div class="col-4">
+                <img src="images/product-6.jpg" alt="" href="/details-produit.html">
+                <h4>Mens standard Fit crew t-shirt</h4>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-o" ></i>
+                </div>
+                <p>50$</p>
+               </div> 
+               <div class="col-4">
+                <img src="images/product-7.jpg" alt="" href="/details-produit.html">
+                <h4>Mens standard Fit crew t-shirt</h4>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-o" ></i>
+                </div>
+                <p>50$</p>
+               </div> 
+               <div class="col-4">
+                <img src="images/product-8.jpg" alt="" href="/details-produit.html">
+                <h4>Mens standard Fit crew t-shirt</h4>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-o" ></i>
+                </div>
+                <p>50$</p>
+               </div> 
+               
+            
+             
+        </div>
+        <div class="row">
+            <div class="col-4">
+             <img src="images/product-9.jpg" alt="" href="/details-produit.html">
+             <h4>Mens standard Fit crew t-shirt</h4>
+             <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o" ></i>
+             </div>
+             <p>50$</p>
+            </div> 
+             <div class="col-4">
+                <img src="images/product-10.jpg" alt="" href="/details-produit.html">
+                <h4>Mens standard Fit crew t-shirt</h4>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-o" ></i>
+                </div>
+                <p>50$</p>
+               </div> 
+               <div class="col-4">
+                <img src="images/product-11.jpg" alt="" href="/details-produit.html">
+                <h4>Mens standard Fit crew t-shirt</h4>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-o" ></i>
+                </div>
+                <p>50$</p>
+               </div> 
+               <div class="col-4">
+                <img src="images/product-12.jpg" alt="" href="/details-produit.html">
+                <h4>Mens standard Fit crew t-shirt</h4>
+                <div class="rating">
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star"></i>
+                   <i class="fa fa-star-o" ></i>
+                </div>
+                <p>50$</p>
+               </div> 
+               
+        </div>
+        
+    </section>
+
+    <!--  Offre  -->
+    <section class="offre">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="images/exclusive.png" alt="exculisivité">
+                </div>
+                <div class="col-2">
+                    <p>Disponible en boutique </p>
+                    <h1>smart band 4</h1>
+                    <small>le MI smart band 4 est  39,9% plus large que  le (MI band 3).
+                        Il est doté d'un écran couleur AMOLED entiérement tactile a luminosité réglable ,
+                         pour que tout soit parfaitement clair.</small>
+                         <div><a class="btn" href="#">commandez &rarr; </a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ---- AVIS ---- -->
+    <section class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eius sequi cupiditate doloribus accusantium minus cum, 
+                        
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o" ></i>
+                     </div>
+                     <img src="images/user-1.png" alt="user1">
+                     <h3>Sean parker</h3>
+                     
+
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eius sequi cupiditate doloribus accusantium minus cum, 
+                        
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o" ></i>
+                     </div>
+                     <img src="images/user-2.png" alt="user1">
+                     <h3>petter parker</h3>
+                     
+
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At eius sequi cupiditate doloribus accusantium minus cum, 
+                        
+                    </p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o" ></i>
+                     </div>
+                     <img src="images/user-3.png" alt="user1">
+                     <h3>Sean parker</h3>
+                     
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---- Marque ---- -->
+
+    <section class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/business-insider.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png" alt="">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer  -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+             <div class="footer-col-1">
+                <h3> telecharger l'application </h3>
+                <p>telechargemenrt pour téléphone Android et Ios </p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="play-store">
+                    <img src="images/app-store.png" alt="app store ">
+                </div>
+
+              
+             </div>
+             <div class="footer-col-2">
+                <img src="images/logo.png" alt="logo">
+                <p>Notre objectif est de rende le plaisir
+                     et le bien etre de s'habiller accessible au plus grand nombre 
+                </p>
+             </div>
+             <div class="footer-col-3">
+                <h3>Lien utiles</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Postes</li>
+                    <li>Politique de retour</li>
+                    <li>Rejoindre un partenaire</li>
+                </ul>
+              </div>
+              <div class="footer-col4">
+                <h3>Nous suivre </h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtubes</li>
+                </ul>
+              </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 E-commerce</p>
+        </div>    
+
+    </footer>
+    <!-- ***** JAVA SCRIPT POUR LE MENU TOOGLE *****  -->
+    <script>
+     let MenuItems=document.getElementById("MenuItems");
+     MenuItems.style.maxHeight="0px";
+     function menutoggle(){
+        if (MenuItems.style.maxHeight=="0px"){
+             MenuItems.style.maxHeight="200px";
+        }
+        else{
+             MenuItems.style.maxHeight="0px";
+        }
+     }
+    </script>
+</body>
+</html>

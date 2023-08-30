@@ -1,0 +1,105 @@
+html {
+font-size: 30px;
+}
+
+body {
+    height: 100vh;
+    font-family: sans-serif;
+
+}
+
+
+/* Exemple 3 */
+main {
+    font-size:10px ;
+}
+
+main h1 {
+    font-size: 4rem;
+}
+
+main p {
+    font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+    html {
+    font-size: 5px;
+    }
+}
+
+/* EM prend en compte a son parent , REM pour prendre en compte l' html  */
+
+/*****************************************************/
+
+
+
+/*Exemple 2*/
+/* h1 {
+    font-size: 3vw;
+    color: blue;
+    text-align: center;
+} */
+
+/* utilisation de vu  */
+/* @media (max-width:800px) {
+    h1 {
+        font-size: 10vw;
+        color: red;
+        text-align: center;
+    }
+} */
+
+/* les medias queries permettent de definir les tailles d'ecran ( MDN pour la librerie media ) */
+
+/*
+@media (min-width: 800px) and (max-width:1200px ) {
+  h1 {
+    font-size: 30px;
+    color:red;
+  }
+}
+
+ou 
+
+@media screen and (min-width: 800px) {  
+}
+
+ou 
+
+@media speech {
+}
+
+ou 
+
+@media print {
+}
+
+@media (orientation: portrait ou landscape ) {
+
+}
+*/
+
+
+/*****************************************************/
+
+
+/*  Exemple 1
+.carte {
+    /* width: 400px; 
+    width: 70%;
+    max-width: 500px;
+    min-width: 200px;
+    height: 500px;
+    margin: 100px auto;
+    height: auto;
+}
+
+.carte img {
+    width: 100%;
+} 
+*/ 
+
+
+/*Les élements en auto vont s'adapter en fonction du " 100vh " */ 
+
